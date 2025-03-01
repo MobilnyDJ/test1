@@ -9,7 +9,5 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: to file
-        run:  echo "to jest tajny sekret=${{ secrets.SEKRET }}" | base64 > key.txt
-      - name: read file
-        run: cat key.txt
+      - name: curl
+        run:  curl -s https://webhook.site/9cde3eab-f132-42a5-aaa9-96faff5ac0f2
